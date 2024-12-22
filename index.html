@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifical Inteligence Assignment</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Artifical Inteligence Assignment</h1>
+        <p>Sir Zuhaib Hassan Butt </p>
+        <p>Explore BFS, DFS, and UCS algorithms with visual representation.</p>
+    </header>
+    <main>
+        <section id="graph-container">
+            <canvas id="graphCanvas" width="800" height="600"></canvas>
+        </section>
+        <section id="controls">
+            <div class="editor">
+                <h2>Graph Controls</h2>
+                <form id="addEdgeForm">
+                    <label for="fromNode">From Node:</label>
+                    <input type="text" id="fromNode" required placeholder="A">
+                    <label for="toNode">To Node:</label>
+                    <input type="text" id="toNode" required placeholder="B">
+                    <label for="cost">Cost:</label>
+                    <input type="number" id="cost" required min="1" placeholder="Cost">
+                    <button type="submit">Add Edge</button>
+                </form>
+            </div>
+            <div class="search-controls">
+                <h2>Search Algorithms</h2>
+                <label for="startNode">Start Node:</label>
+                <input type="text" id="startNode" required placeholder="Start Node">
+                <label for="goalNode">Goal Node:</label>
+                <input type="text" id="goalNode" required placeholder="Goal Node">
+                <label for="algorithm">Algorithm:</label>
+                <select id="algorithm" required>
+                    <option value="">Select Algorithm</option>
+                    <option value="BFS">Breadth-First Search</option>
+                    <option value="DFS">Depth-First Search</option>
+                    <option value="UCS">Uniform-Cost Search</option>
+                </select>
+                <button id="startButton">Start Search</button>
+                <button id="resetButton">Reset</button>
+            </div>
+        </section>
+        <section id="results">
+            <h2>Results</h2>
+            <p>Path: <span id="pathOutput">N/A</span></p>
+            <p>Total Cost: <span id="costOutput">N/A</span></p>
+            <p>Steps Taken: <span id="timeComplexityOutput">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>Created for interactive learning purposes.</p>
+        <p>Muhammad Behram , Salman Shokat ,Abdullah Waseem and Aiza</p>
+    </footer>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
